@@ -1,2 +1,0 @@
-id,name,restype,repo_owner,repo_name,repo_commit_hash,icon,cover,tags,device_vendors,devices,paid_type
-smoke.ox.e2e.fallback,冒烟测试FALLBACK,quick_app,ox-alpha-test,astrobox-resource-smoke-test-2,def5678,icon.png,cover.png,test;fallback,vendor-x,device-x,
