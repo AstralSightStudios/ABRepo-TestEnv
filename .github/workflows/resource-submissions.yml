@@ -10,7 +10,7 @@ on:
     paths:
       - "tmp/**"
       - "index_v2.csv"
-      - "scripts/resource_submissions.py"
+      - ".github/scripts/resource_submissions.py"
       - ".github/workflows/resource-submissions.yml"
   workflow_dispatch:
 
@@ -43,7 +43,7 @@ jobs:
       - uses: actions/checkout@v5
         with:
           ref: main
-          fetch-depth: 0
+          fetch-depth: 1
       - name: Apply pending resource submissions
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
