@@ -141,5 +141,4 @@ com.afdian.matrixfive,爱发电数据仓,quick_app,jinmohan,Afdian-ShuJuCang-Ast
 com.matrixfive.online.ylgy,三相消除,quick_app,jinmohan,SanXiangXiaoChuFor_AstroBox_Release,bbbb920,logo.png,preview.png,羊了个羊;三相消除;游戏;解压,xiaomi,xmb9;xmb9p;xmb10;xmb10nfc;xmws3;xmws4;xmws4xring;xmrw5;xmrw5xring;xmrw6,force_paid
 979890780301,青丘云镜,watchface,zaona,hill-cloud-astrobox-release,e24d0a2,icon.png,preview.png,景深;风景,xiaomi,xmb9p;xmrw5;xmrw5xring;xmrw6,
 123,1,quick_app,CheongSzesuen,test-new-flow,098bd08,media/logo.png,media/coverA.png,1;2,xiaomi,xmb10;xmrw5;xmrw5xring,
-smoke.ox.e2e,冒烟测试E2E,quick_app,ox-alpha-test,astrobox-resource-smoke-test,abc1234,icon.png,cover.png,test;smoke,vendor-x,device-x,
 smoke.ox.e2e.fallback,冒烟测试FALLBACK,quick_app,ox-alpha-test,astrobox-resource-smoke-test-2,def5678,icon.png,cover.png,test;fallback,vendor-x,device-x,
