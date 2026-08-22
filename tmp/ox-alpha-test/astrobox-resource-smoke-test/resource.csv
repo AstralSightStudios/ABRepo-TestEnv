@@ -1,2 +1,0 @@
-id,name,restype,repo_owner,repo_name,repo_commit_hash,icon,cover,tags,device_vendors,devices,paid_type
-smoke.ox.e2e,冒烟测试E2E,quick_app,ox-alpha-test,astrobox-resource-smoke-test,abc1234,icon.png,cover.png,test;smoke,vendor-x,device-x,
