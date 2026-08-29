@@ -1,0 +1,2 @@
+id,name,restype,repo_owner,repo_name,repo_commit_hash,icon,cover,tags,device_vendors,devices,paid_type
+123,1,quick_app,CheongSzesuen,test-new-flow,b5aaf43,media/logo.png,media/coverA.png,1;2,xiaomi,xmb10;xmrw5;xmrw5xring,
