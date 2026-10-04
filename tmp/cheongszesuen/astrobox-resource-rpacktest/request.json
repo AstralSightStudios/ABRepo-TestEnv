@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "mode": "edit",
+  "original_id": "rpacktest",
+  "base_entry_digest": "102633fefc74d478e8bff9f8a537c07943cf48556e83a07cd00cac2c82c23f45",
+  "base_catalog_commit": "aeff1fd98338e2edada46c556614eb4522a237d7",
+  "client": {
+    "version": "0.4.0",
+    "git_commit_hash": "14c1c8b",
+    "build_time": "2026-10-03T19:13:25.479631754+08:00",
+    "build_user": "runner"
+  }
+}
