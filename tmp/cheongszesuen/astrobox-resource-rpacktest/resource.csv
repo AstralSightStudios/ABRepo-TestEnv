@@ -1,2 +1,2 @@
 id,name,restype,repo_owner,repo_name,repo_commit_hash,icon,cover,tags,device_vendors,devices,paid_type
-rpacktest,测试crpack,res_pack,CheongSzesuen,astrobox-resource-rpacktest,1c615b4,media/logo.png,media/head (1).png,2;3;44,xiaomi,xmb10nfc;xmrw6,force_paid
+rpacktest,测试crpack，测试格式化,res_pack,CheongSzesuen,astrobox-resource-rpacktest,3dc8ef2,media/logo.png,media/39577.jpg,2;3;44;测试csv格式化,xiaomi,xmb10nfc;xmrw6,paid
