@@ -53,6 +53,9 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+      # 合并动作由 GITHUB_TOKEN 完成，push 不会触发新 workflow；显式派发
+      # apply-pending 需要 actions: write。
+      actions: write
     steps:
       - uses: actions/checkout@v5
         with:

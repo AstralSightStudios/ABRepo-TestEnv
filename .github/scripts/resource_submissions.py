@@ -889,11 +889,20 @@ def command_auto_apply_delete() -> int:
         api_request(
             "PUT",
             f"/repos/{github_repo()}/pulls/{pr_number}/merge",
-            {
-                "merge_method": "merge",
-                "commit_title": f"Apply resource deletion from PR #{pr_number}",
-            },
+            {"merge_method": "merge"},
         )
+        # 用 GITHUB_TOKEN 合并产生的 push 不会触发新的 workflow，必须显式
+        # 派发 apply-pending，否则目录行和 tmp 目录会一直留着。
+        try:
+            api_request(
+                "POST",
+                f"/repos/{github_repo()}/actions/workflows/resource-submissions.yml/dispatches",
+                {"ref": base_ref},
+            )
+        except SubmissionError as exc:
+            raise SubmissionError(
+                f"PR #{pr_number} 已合并，但触发 apply-pending 失败：{exc}"
+            ) from exc
         api_request(
             "POST",
             f"/repos/{github_repo()}/issues/{pr_number}/comments",
