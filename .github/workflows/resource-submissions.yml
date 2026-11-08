@@ -1,4 +1,4 @@
-name: Resource submissions
+name: Resource catalog
 
 on:
   pull_request:

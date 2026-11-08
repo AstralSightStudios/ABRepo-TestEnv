@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""AstroBox v2 resource submission CLI.
+"""AstroBox v2 resource catalog CLI.
 
 Commands:
   validate-index      Strictly validate index_v2.csv.
@@ -903,16 +903,6 @@ def command_auto_apply_delete() -> int:
             raise SubmissionError(
                 f"PR #{pr_number} 已合并，但触发 apply-pending 失败：{exc}"
             ) from exc
-        api_request(
-            "POST",
-            f"/repos/{github_repo()}/issues/{pr_number}/comments",
-            {
-                "body": (
-                    "删除申请已通过自动校验，并已合入。"
-                    "仓库 Action 将删除对应目录行。"
-                )
-            },
-        )
         print(f"已自动应用删除申请 PR #{pr_number}（资源 {resource_id}）。")
         return 0
     except SubmissionError as exc:
